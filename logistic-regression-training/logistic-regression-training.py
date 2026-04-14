@@ -19,7 +19,7 @@ def train_logistic_regression(X, y, lr=0.01, steps=1000):
     w = np.zeros((y_dim,1),dtype=float)
     b = np.random.rand(1)
     print(w, b)
-    for step in range(50):
+    for step in range(500):
         z = np.dot(X,w) + b 
         a = _sigmoid(z)
         a = np.where(a >= 0.5 , 1 , 0)
